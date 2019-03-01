@@ -1,5 +1,7 @@
 # is-animated-image
 
+🖼️ Check if an image is animated.
+
 Created by create-n.
 
 [![Build Status][travis-image]][travis-url]
