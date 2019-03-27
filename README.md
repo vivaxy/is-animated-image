@@ -22,3 +22,16 @@ Created by create-n.
 [standard-version-url]: https://github.com/conventional-changelog/standard-version
 [codecov-image]: https://img.shields.io/codecov/c/github/vivaxy/is-animated-image.svg?style=flat-square
 [codecov-url]: https://codecov.io/gh/vivaxy/is-animated-image
+
+# Usage
+
+```js
+const imageBuffer = null /* get image buffer somewhere*/;
+const getImageMeta = require('is-animated-image');
+const { ext, mime, animated } = getImageMeta(imageBuffer);
+if (animated) {
+  // is animated image
+} else {
+  // is not animated image
+}
+```
