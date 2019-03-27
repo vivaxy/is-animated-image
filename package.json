@@ -2,6 +2,23 @@
   "name": "is-animated-image",
   "version": "0.1.0",
   "description": "Created by create-n",
+  "keywords": [
+    "image",
+    "images",
+    "animated",
+    "animation",
+    "detection",
+    "binary",
+    "animated-gif",
+    "animated-png",
+    "animated-apng",
+    "animated-webp",
+    "animated-image",
+    "animated-images",
+    "is-animated-image",
+    "is-animated-images",
+    "is-animated"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "ava",
