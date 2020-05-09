@@ -52,7 +52,7 @@
     ]
   },
   "dependencies": {
-    "fast-glob": "^2.2.6",
+    "fast-glob": "^3.0.0",
     "fs-extra": "^7.0.1"
   }
 }
