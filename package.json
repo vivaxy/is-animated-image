@@ -38,12 +38,12 @@
   },
   "homepage": "https://github.com/vivaxy/is-animated-image#readme",
   "devDependencies": {
-    "ava": "^1.2.1",
-    "husky": "^1.3.1",
-    "lint-staged": "^8.1.4",
-    "nyc": "^13.3.0",
-    "prettier": "^1.16.4",
-    "standard-version": "^5.0.1"
+    "ava": "1.2.1",
+    "husky": "1.3.1",
+    "lint-staged": "8.1.4",
+    "nyc": "13.3.0",
+    "prettier": "1.16.4",
+    "standard-version": "5.0.1"
   },
   "lint-staged": {
     "**/**.{js,json,md}": [
