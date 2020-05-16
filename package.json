@@ -21,8 +21,8 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "ava",
-    "coverage": "nyc npm run test && nyc report --reporter=html && nyc report --reporter=lcov > coverage.lcov",
+    "test": "jest",
+    "coverage": "jest --collect-coverage",
     "release:beta": "npm run coverage && standard-version --prerelease beta && npm publish --tag beta && git push --follow-tags",
     "release": "npm run coverage && standard-version && npm publish && git push --follow-tags",
     "pre-commit": "lint-staged"
@@ -38,10 +38,9 @@
   },
   "homepage": "https://github.com/vivaxy/is-animated-image#readme",
   "devDependencies": {
-    "ava": "^3.0.0",
     "husky": "^4.0.0",
+    "jest": "^26.0.1",
     "lint-staged": "^10.0.0",
-    "nyc": "^15.0.0",
     "prettier": "^2.0.0",
     "standard-version": "^8.0.0"
   },
@@ -54,5 +53,13 @@
   "dependencies": {
     "fast-glob": "^3.0.0",
     "fs-extra": "^9.0.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "index.js"
+    ],
+    "testMatch": [
+      "<rootDir>/**/__tests__/**/*.test.js"
+    ]
   }
 }

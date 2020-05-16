@@ -2,9 +2,7 @@
  * @since 2019-03-01 16:14
  * @author vivaxy
  */
-
 const path = require('path');
-const test = require('ava');
 const fse = require('fs-extra');
 const glob = require('fast-glob');
 const getFileMeta = require('../index.js');
@@ -16,7 +14,7 @@ const types = {
 };
 const fixturesDir = path.join(__dirname, 'fixtures');
 
-test('all', async(t) => {
+test('all', async function () {
   const filenames = await glob('*', {
     cwd: fixturesDir,
   });
@@ -36,10 +34,10 @@ test('all', async(t) => {
     const ext = splits[1];
     const buffer = await fse.readFile(path.join(fixturesDir, filename));
     const result = getFileMeta(buffer);
-    t.is(type === types.NOT_RECOGNIZED, result === null, filename);
+    expect(type === types.NOT_RECOGNIZED).toBe(result === null);
     if (result) {
-      t.is(result.ext, ext, filename);
-      t.is(result.animated, type === types.ANIMATED, filename);
+      expect(result.ext).toBe(ext);
+      expect(result.animated).toBe(type === types.ANIMATED);
     }
   }
 });
