@@ -23,6 +23,8 @@ Created by create-n.
 [codecov-image]: https://img.shields.io/codecov/c/github/vivaxy/is-animated-image.svg?style=flat-square
 [codecov-url]: https://codecov.io/gh/vivaxy/is-animated-image
 
+[![DOI](https://zenodo.org/badge/173257138.svg)](https://zenodo.org/badge/latestdoi/173257138)
+
 # Usage
 
 ```js
